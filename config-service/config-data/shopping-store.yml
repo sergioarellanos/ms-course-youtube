@@ -11,3 +11,4 @@ spring:
     admin:
       client:
         url: http://localhost:8086
+        
