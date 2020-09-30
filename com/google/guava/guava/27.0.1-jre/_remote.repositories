@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jun 19 20:45:19 CLT 2020
+guava-27.0.1-jre.jar>central=
+guava-27.0.1-jre-sources.jar>central=
+guava-27.0.1-jre.pom>central=
+guava-27.0.1-jre-javadoc.jar>central=

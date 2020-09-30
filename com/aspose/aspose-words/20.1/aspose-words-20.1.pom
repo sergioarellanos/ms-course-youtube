@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-words</artifactId>
+    <version>20.1</version>
+    <packaging>pom</packaging>
+
+    <name>Aspose.Words for Java</name>
+    <description>
+        Aspose.Words for Java is a full-featured Word Processing API.
+        It allows to read, modify, convert, generate, format, render
+        and print human-readable documents. Aspose.Words for Java
+        supports all the popular Word Processing file formats.
+    </description>
+    <url>https://products.aspose.com/words/java</url>
+    <issueManagement>
+        <url>https://forum.aspose.com/c/words</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>Aspose EULA</name>
+            <url>https://company.aspose.com/legal/eula</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Aspose Pty Ltd</name>
+        <url>https://www.aspose.com/</url>
+    </organization>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>20.1</version>
+            <classifier>${jdk}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>20.1</version>
+            <classifier>shaping-harfbuzz-plugin</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>20.1</version>
+            <classifier>javadoc</classifier>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>JDK6</id>
+            <activation>
+                <jdk>1.6</jdk>
+            </activation>
+            <properties>
+                <jdk>jdk16</jdk>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>JDK7Plus</id>
+            <activation>
+                <jdk>[1.7,)</jdk>
+            </activation>
+            <properties>
+                <jdk>jdk17</jdk>
+            </properties>
+        </profile>
+    </profiles>
+
+    <repositories>
+        <repository>
+            <id>AsposeJavaAPI</id>
+            <name>Aspose Java API</name>
+            <url>https://repository.aspose.com/repo/</url>
+        </repository>
+    </repositories>
+
+</project>
